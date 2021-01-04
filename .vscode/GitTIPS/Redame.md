@@ -106,3 +106,5 @@ On branch master
 nothing to commit, working tree clean
 does not look good. ;-((
     
+Now opened up a second copy of the files. I have cloned the https://github.com/Melbage/TAU.git git repo. 
+
