@@ -1,4 +1,4 @@
-##Command and cammad line tools 
+## Command and cammad line tools 
 
 # Configure VS Code to view the .git folder strucsture in the Explorer viw. 
 command P and sreach for open work space. either select the JSON one or setting option then ;
