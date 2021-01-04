@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Command and command line tools 
+=======
+## Command and cammad line tools 
+>>>>>>> 1bb5b61b463b7aeaafe819fe8fc85c0f20677a41
 
 ## Configure VS Code to view the .git folder structure in the Explorer view. 
 command P and sreach for open work space. either select the JSON one or setting option then ;
@@ -105,6 +109,7 @@ and the repository exists.
 On branch master
 nothing to commit, working tree clean
 does not look good. ;-((
+<<<<<<< HEAD
 
 in the end I did 
     git remote set-url origin https://github.com/Melbage/TAU.git
@@ -112,3 +117,6 @@ in the end I did
     git branch -M main
     git push -u origin main
 
+=======
+    
+>>>>>>> 1bb5b61b463b7aeaafe819fe8fc85c0f20677a41
