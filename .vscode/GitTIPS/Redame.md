@@ -119,4 +119,9 @@ in the end I did
 
 =======
     
+<<<<<<< HEAD
 >>>>>>> 1bb5b61b463b7aeaafe819fe8fc85c0f20677a41
+=======
+Now opened up a second copy of the files. I have cloned the https://github.com/Melbage/TAU.git git repo. 
+
+>>>>>>> aa36f39a532afdc3c0e281eb4406b1cafe7c3c5d
