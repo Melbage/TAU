@@ -1,6 +1,6 @@
-##Command and cammad line tools 
+# Command and command line tools 
 
-# Configure VS Code to view the .git folder strucsture in the Explorer viw. 
+## Configure VS Code to view the .git folder structure in the Explorer view. 
 command P and sreach for open work space. either select the JSON one or setting option then ;
 JSON file 
 {
@@ -11,7 +11,7 @@ JSON file
 or remove the **/.git from your setting screen and save.
 
 
-Using the command line. 
+## Using the command line. 
  git init will create a new git repo where you are. In Vscode you can now see this. 
  -- set my user name
   git config user.name pcarter
@@ -105,4 +105,10 @@ and the repository exists.
 On branch master
 nothing to commit, working tree clean
 does not look good. ;-((
-    
+
+in the end I did 
+    git remote set-url origin https://github.com/Melbage/TAU.git
+    git remote add origin https://github.com/Melbage/TAU.git
+    git branch -M main
+    git push -u origin main
+
