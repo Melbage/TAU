@@ -121,3 +121,174 @@ in the end I did
 Now opened up a second copy of the files. I have cloned the https://github.com/Melbage/TAU.git git repo. 
 
 >>>>>>> aa36f39a532afdc3c0e281eb4406b1cafe7c3c5d
+
+Work yesterday as pec1909@Melbage
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+(base) Users-MacBook-Pro:GITTest paulcarter$ pwd
+/Users/paulcarter/Documents/Labs/GITTest
+(base) Users-MacBook-Pro:GITTest paulcarter$ git clone https://github.com/Melbage/TAU.git
+Cloning into 'TAU'...
+remote: Enumerating objects: 18, done.
+remote: Counting objects: 100% (18/18), done.
+remote: Compressing objects: 100% (13/13), done.
+remote: Total 18 (delta 1), reused 12 (delta 0), pack-reused 0
+Unpacking objects: 100% (18/18), done.
+(base) Users-MacBook-Pro:GITTest paulcarter$ git log
+fatal: Not a git repository (or any of the parent directories): .git
+(base) Users-MacBook-Pro:GITTest paulcarter$ pwd
+/Users/paulcarter/Documents/Labs/GITTest
+(base) Users-MacBook-Pro:GITTest paulcarter$ ls
+TAU
+(base) Users-MacBook-Pro:GITTest paulcarter$ cd TAU
+(base) Users-MacBook-Pro:TAU paulcarter$ git log
+commit 1bb5b61b463b7aeaafe819fe8fc85c0f20677a41 (HEAD -> main, origin/main, origin/HEAD)
+Author: Melbage <68875651+Melbage@users.noreply.github.com>
+Date:   Mon Jan 4 18:41:27 2021 +0000
+
+    Update Redame.md
+
+commit 9740d09ad78c1411007f39160714276129f206df
+Author: melbage <tubby@melbage.co.uk>
+Date:   Mon Jan 4 18:29:12 2021 +0000
+
+    added more comments
+
+commit 7fb33f021a4a5e43bcd13b667221239ce0da75ec
+Author: pcarter <pec1909@yahoo.co.uk>
+Date:   Sun Jan 3 22:12:56 2021 +0000
+
+    initalized project
+     #Initial commit
+(base) Users-MacBook-Pro:TAU paulcarter$ git commit -am"testing git commit"
+[main aa36f39] testing git commit
+ 1 file changed, 2 insertions(+)
+(base) Users-MacBook-Pro:TAU paulcarter$ git push
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 580 bytes | 580.00 KiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Melbage/TAU.git
+   1bb5b61..aa36f39  main -> main
+(base) Users-MacBook-Pro:TAU paulcarter$ git log
+commit aa36f39a532afdc3c0e281eb4406b1cafe7c3c5d (HEAD -> main, origin/main, origin/HEAD)
+Author: Melbage <tubby@Melbage.co.uk>
+Date:   Mon Jan 4 22:33:57 2021 +0000
+
+    testing git commit
+
+commit 1bb5b61b463b7aeaafe819fe8fc85c0f20677a41
+Author: Melbage <68875651+Melbage@users.noreply.github.com>
+Date:   Mon Jan 4 18:41:27 2021 +0000
+
+    Update Redame.md
+
+commit 9740d09ad78c1411007f39160714276129f206df
+Author: melbage <tubby@melbage.co.uk>
+Date:   Mon Jan 4 18:29:12 2021 +0000
+
+    added more comments
+
+commit 7fb33f021a4a5e43bcd13b667221239ce0da75ec
+Author: pcarter <pec1909@yahoo.co.uk>
+Date:   Sun Jan 3 22:12:56 2021 +0000
+
+    initalized project
+     #Initial commit
+(base) Users-MacBook-Pro:TAU paulcarter$ git branch -l -a
+* main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/main
+(base) Users-MacBook-Pro:TAU paulcarter$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+(base) Users-MacBook-Pro:TAU paulcarter$ git config -l --local
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+core.ignorecase=true
+core.precomposeunicode=true
+remote.origin.url=https://github.com/Melbage/TAU.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+branch.main.remote=origin
+branch.main.merge=refs/heads/main
+(base) Users-MacBook-Pro:TAU paulcarter$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+(base) Users-MacBook-Pro:TAU paulcarter$ git status
+On branch main
+Your branch is behind 'origin/main' by 3 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+nothing to commit, working tree clean
+(base) Users-MacBook-Pro:TAU paulcarter$ git pull
+Updating aa36f39..fa4ee17
+Fast-forward
+ .vscode/GitTIPS/Redame.md | 21 +++++++++++++++++++--
+ 1 file changed, 19 insertions(+), 2 deletions(-)
+(base) Users-MacBook-Pro:TAU paulcarter$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+(base) Users-MacBook-Pro:TAU paulcarter$ git commit -a 
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+(base) Users-MacBook-Pro:TAU paulcarter$ git reflogfa4ee17 (HEAD -> main, origin/main, origin/HEAD) HEAD@{0}: pull: Fast-forward
+aa36f39 HEAD@{1}: commit: testing git commit
+1bb5b61 HEAD@{2}: clone: from https://github.com/Melbage/TAU.git
+(base) Users-MacBook-Pro:TAU paulcarter$ pwd
+/Users/paulcarter/Documents/Labs/GITTest/TAU
+(base) Users-MacBook-Pro:TAU paulcarter$ ls -la
+total 16
+drwxr-xr-x   6 paulcarter  staff  192 Jan  4 22:27 .
+drwxr-xr-x   3 paulcarter  staff   96 Jan  4 22:27 ..
+drwxr-xr-x  16 paulcarter  staff  512 Jan  4 22:58 .git
+-rw-r--r--   1 paulcarter  staff   12 Jan  4 22:27 .gitignore
+drwxr-xr-x   4 paulcarter  staff  128 Jan  4 22:27 .vscode
+-rw-r--r--   1 paulcarter  staff   60 Jan  4 22:27 TAU.code-workspace
+(base) Users-MacBook-Pro:TAU paulcarter$ 
+(base) Users-MacBook-Pro:TAU paulcarter$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+(base) Users-MacBook-Pro:TAU paulcarter$ git reflog
+5b76d07 (HEAD -> main, origin/main, origin/HEAD) HEAD@{0}: commit: accept pec changes
+fa4ee17 HEAD@{1}: pull: Fast-forward
+aa36f39 HEAD@{2}: commit: testing git commit
+1bb5b61 HEAD@{3}: clone: from https://github.com/Melbage/TAU.git
+(base) Users-MacBook-Pro:TAU paulcarter$ git status
+On branch main
+Your branch is behind 'origin/main' by 2 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+nothing to commit, working tree clean
+(base) Users-MacBook-Pro:TAU paulcarter$ git pull
+Updating 5b76d07..ac1b78e
+Fast-forward
+(base) Users-MacBook-Pro:TAU paulcarter$ git reflog
+ac1b78e (HEAD -> main, origin/main, origin/HEAD) HEAD@{0}: pull: Fast-forward
+5b76d07 HEAD@{1}: commit: accept pec changes
+fa4ee17 HEAD@{2}: pull: Fast-forward
+aa36f39 HEAD@{3}: commit: testing git commit
+1bb5b61 HEAD@{4}: clone: from https://github.com/Melbage/TAU.git
+(base) Users-MacBook-Pro:TAU paulcarter$ git branch -M Master
+(base) Users-MacBook-Pro:TAU paulcarter$ git reflog
+ac1b78e (HEAD -> Master, origin/main, origin/HEAD) HEAD@{0}: Branch: renamed refs/heads/main to refs/heads/Master
+ac1b78e (HEAD -> Master, origin/main, origin/HEAD) HEAD@{2}: pull: Fast-forward
+5b76d07 HEAD@{3}: commit: accept pec changes
+fa4ee17 HEAD@{4}: pull: Fast-forward
+aa36f39 HEAD@{5}: commit: testing git commit
+1bb5b61 HEAD@{6}: clone: from https://github.com/Melbage/TAU.git
+(base) Users-MacBook-Pro:TAU paulcarter$ git reflog
