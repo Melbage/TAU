@@ -292,3 +292,51 @@ fa4ee17 HEAD@{4}: pull: Fast-forward
 aa36f39 HEAD@{5}: commit: testing git commit
 1bb5b61 HEAD@{6}: clone: from https://github.com/Melbage/TAU.git
 (base) Users-MacBook-Pro:TAU paulcarter$ git reflog
+
+Today change the main branch to master and 
+(base) Users-MacBook-Pro:TAU paulcarter$ git branch -M Master
+(base) Users-MacBook-Pro:TAU paulcarter$ git reflog
+ac1b78e (HEAD -> Master, origin/main, origin/HEAD) HEAD@{0}: Branch: renamed refs/heads/main to refs/heads/Master
+ac1b78e (HEAD -> Master, origin/main, origin/HEAD) HEAD@{2}: pull: Fast-forward
+5b76d07 HEAD@{3}: commit: accept pec changes
+fa4ee17 HEAD@{4}: pull: Fast-forward
+aa36f39 HEAD@{5}: commit: testing git commit
+1bb5b61 HEAD@{6}: clone: from https://github.com/Melbage/TAU.git
+(base) Users-MacBook-Pro:TAU paulcarter$ git push
+fatal: The upstream branch of your current branch does not match
+the name of your current branch.  To push to the upstream branch
+on the remote, use
+
+    git push origin HEAD:main
+
+To push to the branch of the same name on the remote, use
+
+    git push origin Master
+
+(base) Users-MacBook-Pro:TAU paulcarter$ git push origin Master
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 3.48 KiB | 3.48 MiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0)
+remote: 
+remote: Create a pull request for 'Master' on GitHub by visiting:
+remote:      https://github.com/Melbage/TAU/pull/new/Master
+remote: 
+To https://github.com/Melbage/TAU.git
+ * [new branch]      Master -> Master
+(base) Users-MacBook-Pro:TAU paulcarter$ git status
+On branch Master
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+(base) Users-MacBook-Pro:TAU paulcarter$ git reflog
+36838a1 (HEAD -> Master, origin/Master) HEAD@{0}: commit: added yesterday work
+ac1b78e (origin/main, origin/HEAD) HEAD@{1}: Branch: renamed refs/heads/main to refs/heads/Master
+ac1b78e (origin/main, origin/HEAD) HEAD@{3}: pull: Fast-forward
+5b76d07 HEAD@{4}: commit: accept pec changes
+fa4ee17 HEAD@{5}: pull: Fast-forward
+aa36f39 HEAD@{6}: commit: testing git commit
+1bb5b61 HEAD@{7}: clone: from https://github.com/Melbage/TAU.git
+(base) Users-MacBook-Pro:TAU paulcarter$ 
