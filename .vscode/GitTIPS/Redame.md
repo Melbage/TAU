@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 # Command and command line tools 
-=======
-## Command and cammad line tools 
->>>>>>> 1bb5b61b463b7aeaafe819fe8fc85c0f20677a41
 
 ## Configure VS Code to view the .git folder structure in the Explorer view. 
 command P and sreach for open work space. either select the JSON one or setting option then ;
