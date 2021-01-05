@@ -122,6 +122,7 @@ Now opened up a second copy of the files. I have cloned the https://github.com/M
 
 >>>>>>> aa36f39a532afdc3c0e281eb4406b1cafe7c3c5d
 
+<<<<<<< HEAD
 Work yesterday as pec1909@Melbage
 The default interactive shell is now zsh.
 To update your account to use zsh, please run `chsh -s /bin/zsh`.
@@ -185,6 +186,54 @@ Author: Melbage <68875651+Melbage@users.noreply.github.com>
 Date:   Mon Jan 4 18:41:27 2021 +0000
 
     Update Redame.md
+=======
+Work from yesterday as Tubby@melbage.
+(base) Users-MacBook-Pro:TAU paulcarter$ git remote add origin git@github.com:Melbage/TAU.git
+fatal: remote origin already exists.
+(base) Users-MacBook-Pro:TAU paulcarter$ git push --set-upstream origin master
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+(base) Users-MacBook-Pro:TAU paulcarter$ git status
+On branch master
+nothing to commit, working tree clean
+(base) Users-MacBook-Pro:TAU paulcarter$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   .vscode/GitTIPS/Redame.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) Users-MacBook-Pro:TAU paulcarter$ git commit -am"added more comments"
+[master 9740d09] added more comments
+ 1 file changed, 108 insertions(+)
+(base) Users-MacBook-Pro:TAU paulcarter$ git remote add origin git@github.com:Melbage/TAU.git
+fatal: remote origin already exists.
+(base) Users-MacBook-Pro:TAU paulcarter$ git remote add origin https://github.com/Melbage/TAU.gitfatal: remote origin already exists.
+(base) Users-MacBook-Pro:TAU paulcarter$ git remote set-url origin https://github.com/Melbage/TAU.git
+(base) Users-MacBook-Pro:TAU paulcarter$ git remote add origin https://github.com/Melbage/TAU.gitfatal: remote origin already exists.
+(base) Users-MacBook-Pro:TAU paulcarter$ git remote add origin https://github.com/Melbage/TAU.gitfatal: remote origin already exists.
+(base) Users-MacBook-Pro:TAU paulcarter$ git branch -M main
+(base) Users-MacBook-Pro:TAU paulcarter$ git push -u origin main
+Counting objects: 13, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (13/13), 2.53 KiB | 2.53 MiB/s, done.
+Total 13 (delta 0), reused 0 (delta 0)
+To https://github.com/Melbage/TAU.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+(base) Users-MacBook-Pro:TAU paulcarter$ git log
+commit 8b6ae81c330f9bb524e4f2b0c3095801c250adae (HEAD -> main)
+Author: melbage <tubby@melbage.co.uk>
+Date:   Mon Jan 4 18:44:35 2021 +0000
+
+    changes to readme file.
+>>>>>>> 235492e2b30ae1c62df0e9fd3a3fd7fb790003a0
 
 commit 9740d09ad78c1411007f39160714276129f206df
 Author: melbage <tubby@melbage.co.uk>
@@ -198,6 +247,7 @@ Date:   Sun Jan 3 22:12:56 2021 +0000
 
     initalized project
      #Initial commit
+<<<<<<< HEAD
 (base) Users-MacBook-Pro:TAU paulcarter$ git branch -l -a
 * main
   remotes/origin/HEAD -> origin/main
@@ -258,12 +308,139 @@ drwxr-xr-x  16 paulcarter  staff  512 Jan  4 22:58 .git
 drwxr-xr-x   4 paulcarter  staff  128 Jan  4 22:27 .vscode
 -rw-r--r--   1 paulcarter  staff   60 Jan  4 22:27 TAU.code-workspace
 (base) Users-MacBook-Pro:TAU paulcarter$ 
+=======
+(base) Users-MacBook-Pro:TAU paulcarter$ git statusOn branch main
+Your branch and 'origin/main' have diverged,
+and have 1 and 2 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+
+        both modified:   .vscode/GitTIPS/Redame.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) Users-MacBook-Pro:TAU paulcarter$ git mergeerror: Merging is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+(base) Users-MacBook-Pro:TAU paulcarter$ git status
+On branch main
+Your branch and 'origin/main' have diverged,
+and have 1 and 2 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+
+        both modified:   .vscode/GitTIPS/Redame.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) Users-MacBook-Pro:TAU paulcarter$ git stash
+.vscode/GitTIPS/Redame.md: needs merge
+.vscode/GitTIPS/Redame.md: needs merge
+.vscode/GitTIPS/Redame.md: unmerged (4259db286178aeaf8f1032c276bf1bd40ee97337)
+.vscode/GitTIPS/Redame.md: unmerged (c31fe1916b1948b6879fa3223d330b489bd3e8c1)
+.vscode/GitTIPS/Redame.md: unmerged (d55736f60016b90c252bb9860ce83ed9446f0a54)
+fatal: git-write-tree: error building trees
+Cannot save the current index state
+(base) Users-MacBook-Pro:TAU paulcarter$ git stash list
+(base) Users-MacBook-Pro:TAU paulcarter$ git status
+On branch main
+Your branch and 'origin/main' have diverged,
+and have 1 and 2 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+
+        both modified:   .vscode/GitTIPS/Redame.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) Users-MacBook-Pro:TAU paulcarter$ git reflog
+8b6ae81 (HEAD -> main) HEAD@{0}: commit: changes to readme file.
+9740d09 HEAD@{1}: Branch: renamed refs/heads/master to refs/heads/main
+9740d09 HEAD@{3}: commit: added more comments
+7fb33f0 HEAD@{4}: commit (initial): initalized project
+(base) Users-MacBook-Pro:TAU paulcarter$ git merge
+error: Merging is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+(base) Users-MacBook-Pro:TAU paulcarter$ git commit -m" merge test"
+U       .vscode/GitTIPS/Redame.md
+error: Committing is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+(base) Users-MacBook-Pro:TAU paulcarter$ git status
+On branch main
+Your branch and 'origin/main' have diverged,
+and have 2 and 1 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+nothing to commit, working tree clean
+(base) Users-MacBook-Pro:TAU paulcarter$ git pull origin
+Auto-merging .vscode/GitTIPS/Redame.md
+CONFLICT (content): Merge conflict in .vscode/GitTIPS/Redame.md
+Automatic merge failed; fix conflicts and then commit the result.
+(base) Users-MacBook-Pro:TAU paulcarter$ git status
+On branch main
+Your branch and 'origin/main' have diverged,
+and have 2 and 1 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+
+        both modified:   .vscode/GitTIPS/Redame.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) Users-MacBook-Pro:TAU paulcarter$ git commit -am"test2"
+[main fa4ee17] test2
+(base) Users-MacBook-Pro:TAU paulcarter$ git merge
+Already up to date.
+(base) Users-MacBook-Pro:TAU paulcarter$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+(base) Users-MacBook-Pro:TAU paulcarter$ git pull origin
+Already up to date.
+(base) Users-MacBook-Pro:TAU paulcarter$ git push
+Counting objects: 15, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (15/15), 1.65 KiB | 1.65 MiB/s, done.
+Total 15 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+To https://github.com/Melbage/TAU.git
+   aa36f39..fa4ee17  main -> main
+>>>>>>> 235492e2b30ae1c62df0e9fd3a3fd7fb790003a0
 (base) Users-MacBook-Pro:TAU paulcarter$ git status
 On branch main
 Your branch is up to date with 'origin/main'.
 
 nothing to commit, working tree clean
 (base) Users-MacBook-Pro:TAU paulcarter$ git reflog
+<<<<<<< HEAD
 5b76d07 (HEAD -> main, origin/main, origin/HEAD) HEAD@{0}: commit: accept pec changes
 fa4ee17 HEAD@{1}: pull: Fast-forward
 aa36f39 HEAD@{2}: commit: testing git commit
@@ -340,3 +517,74 @@ fa4ee17 HEAD@{5}: pull: Fast-forward
 aa36f39 HEAD@{6}: commit: testing git commit
 1bb5b61 HEAD@{7}: clone: from https://github.com/Melbage/TAU.git
 (base) Users-MacBook-Pro:TAU paulcarter$ 
+=======
+fa4ee17 (HEAD -> main, origin/main) HEAD@{0}: commit (merge): test2
+fb3235d HEAD@{1}: commit (merge): Merge branch 'main' of https://github.com/Melbage/TAU into main
+8b6ae81 HEAD@{2}: commit: changes to readme file.
+9740d09 HEAD@{3}: Branch: renamed refs/heads/master to refs/heads/main
+9740d09 HEAD@{5}: commit: added more comments
+7fb33f0 HEAD@{6}: commit (initial): initalized project
+(base) Users-MacBook-Pro:TAU paulcarter$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+(base) Users-MacBook-Pro:TAU paulcarter$ git push
+To https://github.com/Melbage/TAU.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/Melbage/TAU.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+(base) Users-MacBook-Pro:TAU paulcarter$ git pull
+remote: Enumerating objects: 9, done.
+remote: Counting objects: 100% (9/9), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 5 (delta 1), reused 5 (delta 1), pack-reused 0
+Unpacking objects: 100% (5/5), done.
+From https://github.com/Melbage/TAU
+   fa4ee17..5b76d07  main       -> origin/main
+Merge made by the 'recursive' strategy.
+(base) Users-MacBook-Pro:TAU paulcarter$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+(base) Users-MacBook-Pro:TAU paulcarter$ git push
+Counting objects: 2, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 357 bytes | 357.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/Melbage/TAU.git
+   5b76d07..ac1b78e  main -> main
+(base) Users-MacBook-Pro:TAU paulcarter$ git reflog
+ac1b78e (HEAD -> main, origin/main) HEAD@{0}: pull: Merge made by the 'recursive' strategy.
+f29692f HEAD@{1}: commit: accepts git json change
+fa4ee17 HEAD@{2}: commit (merge): test2
+fb3235d HEAD@{3}: commit (merge): Merge branch 'main' of https://github.com/Melbage/TAU into main
+8b6ae81 HEAD@{4}: commit: changes to readme file.
+9740d09 HEAD@{5}: Branch: renamed refs/heads/master to refs/heads/main
+9740d09 HEAD@{7}: commit: added more comments
+7fb33f0 HEAD@{8}: commit (initial): initalized project
+(base) Users-MacBook-Pro:TAU paulcarter$ git reflog
+ac1b78e (HEAD -> main, origin/main) HEAD@{0}: pull: Merge made by the 'recursive' strategy.
+f29692f HEAD@{1}: commit: accepts git json change
+fa4ee17 HEAD@{2}: commit (merge): test2
+fb3235d HEAD@{3}: commit (merge): Merge branch 'main' of https://github.com/Melbage/TAU into main
+8b6ae81 HEAD@{4}: commit: changes to readme file.
+9740d09 HEAD@{5}: Branch: renamed refs/heads/master to refs/heads/main
+9740d09 HEAD@{7}: commit: added more comments
+7fb33f0 HEAD@{8}: commit (initial): initalized project
+(base) Users-MacBook-Pro:TAU paulcarter$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+>>>>>>> 235492e2b30ae1c62df0e9fd3a3fd7fb790003a0
